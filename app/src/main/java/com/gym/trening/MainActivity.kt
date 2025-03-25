@@ -1,5 +1,4 @@
 package com.gym.trening
-
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -8,9 +7,11 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Text
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.gym.trening.ui.theme.DarkPurpleBlue
 import com.gym.trening.ui.theme.TreningTheme
 
 class MainActivity : ComponentActivity() {
@@ -22,7 +23,10 @@ class MainActivity : ComponentActivity() {
                 Row(Modifier.padding(30.dp, 20.dp)) {
                     Text("tренировки",
                         style = TextStyle(
-                            fontSize = 40.sp))
+                            fontSize = 40.sp,
+                            color = DarkPurpleBlue))
+                    val image = painterResource(R.drawable.baseline_account_circle_24)
+                    
                 }
             }
         }
